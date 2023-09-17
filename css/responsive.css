@@ -3,11 +3,7 @@
 
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-search {
-        padding: 15px 0px;
-    }
-}
+
 
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
@@ -73,11 +69,16 @@
     .mean-container .mean-nav ul li li li a {
         width: 100%;
     }
-    .header-search {
-        padding: 15px 0px;
-    }
+
     #collapseFilter.d-md-block {
         padding: 30px 0px;
+    }
+    .menu_text li{
+        display: none;
+    }
+    .toggle_menu {
+        top: -43px;
+        left: 460px;
     }
 }
 
@@ -85,6 +86,12 @@
 /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+    .menu_text li{
+        display: none;
+    }
+    .overlay-content li{
+        display: block !important;
+    }
     .cart-content-right {
         padding-bottom: 5px;
     }
@@ -172,6 +179,10 @@
         padding-left: 5px;
         font-size: 16px;
         padding-top: 7px;
+    }
+    .menu_text ul{
+        display: flex;
+        align-items: center;
     }
     .toggle_menu {
         left: 60px;
@@ -262,9 +273,21 @@
     .about_bt a {
         margin-top: 0px;
     }
+    .toggle_menu {
+    
+        
+        top: -0px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+   .menu_text li{
+    font-size: .8rem !important;
+   }
+    .toggle_menu {
+      left: 50px !important;
+      top: 0px !important;
+    }
     .main-menu ul>li a {
         padding: 7px 6px;
     }
@@ -325,12 +348,8 @@
     .logo {
         left: 0px;
     }
-    .menu_text li {
-        display: none;
-    }
-    .toggle_menu {
-        left: 460px;
-    }
+  
+
     .construction_text {
         font-size: 24px;
     }
@@ -499,11 +518,9 @@
         position: inherit;
         left: 0px;
     }
-    .menu_text li {
-        display: none;
-    }
+   
     .toggle_menu {
-        top: -57px;
+        top: -43px;
         left: 460px;
     }
     .round {
@@ -519,7 +536,7 @@
         height: 10px;
     }
     .building_text {
-        font-size: 54px;
+        font-size: 30px;
     }
     .construction_text {
         font-size: 26px;
@@ -527,9 +544,9 @@
     .taital_main {
         margin-top: 50px;
     }
-    .lorem_text {
-        display: none;
-    }
+ .carousel-item{
+    padding-bottom: 30px;
+ }
     .contact_bt {
         display: none;
     }
@@ -632,6 +649,28 @@
 }
 
 @media (max-width: 575px) {
+    .carousel-item .row{
+        display: flex;
+        flex-direction: row !important;
+    }
+    .carousel-item .row .col-sm-5{
+        width: 50% !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .taital_main{
+        margin-bottom: 20px !important;
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+        padding-left: 30px !important;
+       
+    }
+    .building_text {
+        font-size: 30px;
+    }
     .last {
         display: none;
     }
@@ -732,16 +771,17 @@
     .number_text {
         display: none;
     }
-    .building_text {
-        display: none;
-    }
-    .menu_text li {
-        display: none;
-    }
+  
+
     .toggle_menu {
-        top: -68px;
+    
         position: relative;
-        left: 240px;
+        left:400px;
+        top: -53px;
+       
+    }
+    .logo a{
+        font-size:  .8rem;
     }
     .menu_text {
         height: 0px;
@@ -860,5 +900,44 @@
     .copyright_text {
         margin-left: 0px;
         font-size: 14px;
+    }
+    .carousel-control-prev {
+        position: absolute;
+        left: 260px !important;
+        top: 105px !important;
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .carousel-control-next {
+        position: absolute;
+        left: 270px !important;
+        top: 155px !important;
+        height: 40px !important;
+        width: 40px !important;
+        
+    }
+  
+}
+@media  (max-width: 500px) {
+    .carousel-control-prev {
+        position: absolute;
+        left: 230px !important;
+        top: 45px !important;
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .carousel-control-next {
+        position: absolute;
+        left: 250px !important;
+        top: 95px !important;
+        height: 40px !important;
+        width: 40px !important;
+        
+    }
+    .toggle_menu {
+    
+        position: relative;
+        left:340px;
+        top: -50px;
     }
 }

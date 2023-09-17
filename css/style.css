@@ -421,6 +421,7 @@ button {
     width: 63%;
     float: right;
     margin-top: 80px;
+    padding: 20px 20px;
 }
 
 .about_text {
@@ -444,7 +445,6 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    border-radius: 5px;
     background-color: #e05306;
     height: 50px;
     font-weight: bold;
@@ -956,6 +956,7 @@ a {
     color: #ffffff;
     text-decoration: none;
     outline: none !important;
+
 }
 
 .icons {
@@ -1096,6 +1097,7 @@ hr {
 .container-fluid {
     margin: 0 !important;
     padding: 0 !important;
+    overflow: hidden !important;
 
 }
 
@@ -1245,4 +1247,30 @@ hr {
 }
 .footer_section{
     margin-top: 0 !important;
+}
+.banner_section .more{
+    width: 100px !important;
+    background-color: transparent !important;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px !important;
+}
+.banner_section .more:hover{
+    background-color: white !important;
+    border-color: white !important;
+    color: rgb(224, 83, 6) !important;
+    transition: .3s;
+}
+.menu_text ul{
+    display: flex;
+    align-items: center !important ;
+}
+
+.row{
+    overflow: hidden !important;
 }
